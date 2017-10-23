@@ -75,8 +75,8 @@ Cyrylica Polska has 37 letters. Exactly the same as the 33 letters of the Russia
 ---
 ### Vowels
 
-Every vowel has a hardening and a softening version. Both can occur in two possitions: either it follows a consonant, or it doesn't (in that case it is either word-initial or after another vowel). In Polish orthography, when a softening vowel follows a consonant, it is preceded by i, unless the consonant in question is inherently soft. In other positions this vowel is preceded by j. The only exceptions are i, which is softening by definition, and y, which is never softening.
-Just like i and y form a pair, in Cyrillic all vowels come in pairs, as you can see in the table below:
+Every vowel has a hardening and a softening version. Both can occur in two possitions: either it follows a consonant, or it doesn't (in that case it is either word-initial or after another vowel). In Polish orthography, when a softening vowel follows a consonant, it is preceded by **i**, unless the consonant in question is inherently soft. In other positions this vowel is preceded by **j**. The only exceptions are **i**, which is softening by definition, and **y**, which is never softening.  
+Just like **i** and **y** form a pair, in Cyrillic all vowels come in pairs, as you can see in the table below:
   	
 Latin<br>hard |Latin<br>soft |Cyrylica<br>hard |Cyrylica<br>soft
 --------|-------|-------|-----
@@ -124,13 +124,13 @@ j 	|й
 
 A few notes:
 
-* Most consonants can be soft (palatalised) or hard. Whether a Cyrillic д should be read as d or dź is decided by the consonant that follows it: дэ should be read as de, де should be read as dzie.
-* If a soft consonant is not followed by a vowel, i.e. when it is word- or syllable-final, it is followed by the soft sign: bat becomes бат, bać becomes бать.
-* In reality, the soft sign will occur only after т, д, н, л, and р. However, in a few cases it can be placed after another consonant as well, although that wouldn't affect pronunciation. For example, take these two Polish cities: Kraków and Wrocław. When declined, the former has a hard w, the latter a soft w, and so their genitives are Krakowa and Wrocławia respectively. In Cyrillic, we could easily write Вроцлавь for "Wrocław", to make this fact predictable.
-* Most consonant clusers as palatalised as a whole, and only in a few cases consonants in such a cluster are palatalised individually. Therefore, śmiałość is written смялость, and not сьмялосьть.
-* The consonant clusters śr and źr (historically from ser-/zer- > srze-/zrze-, in some dialects strz/zdrz or rś/rź) are treated as sr/zr + palataliser: środa therefore becomes срëда, źródło becomes зрюдло.
-* When a hard consonant is followed by a palatalising vowel, the hard sign is used to prevent it from being palatalised. For example, zjeść is written зъесть, because зесть would be read as zieść.
-* This alphabet contains the Cyrillic letters щ for szcz, but that is just an arbitrary choice. Russian, Ukrainian and Bulgarian have this letter, Belarusian, Serbian and Macedonian manage without it. 
+* Most consonants can be soft (palatalised) or hard. Whether a Cyrillic **д** should be read as **d** or **dź** is decided by the consonant that follows it: **дэ** should be read as **de**, **де** should be read as **dzie**.
+* If a soft consonant is not followed by a vowel, i.e. when it is word- or syllable-final, it is followed by the soft sign: **bat** becomes **бат**, **bać** becomes **бать**.
+* In reality, the soft sign will occur only after **т**, **д**, **н**, **л**, and **р**. However, in a few cases it can be placed after another consonant as well, although that wouldn't affect pronunciation. For example, take these two Polish cities: Kraków and Wrocław. When declined, the former has a hard **w**, the latter a soft **w**, and so their genitives are *Krakowa* and *Wrocławia* respectively. In Cyrillic, we could easily write **Вроцлавь** for "Wrocław", to make this fact predictable.
+* Most consonant clusers as palatalised as a whole, and only in a few cases consonants in such a cluster are palatalised individually. Therefore, **śmiałość** is written **смялость**, and not **сьмялосьть**.
+* The consonant clusters **śr** and **źr** (historically from *ser-/zer- > srze-/zrze-*, in some dialects *strz/zdrz* or *rś/rź*) are treated as **sr/zr** + palataliser: **środa** therefore becomes **срëда**, **źródło** becomes **зрюдло**.
+* When a hard consonant is followed by a palatalising vowel, the hard sign is used to prevent it from being palatalised. For example, *zjeść* is written **зъесть**, because **зесть** would be read as *zieść*.
+* This alphabet contains the Cyrillic letters **щ** for **szcz**, but that is just an arbitrary choice. Russian, Ukrainian and Bulgarian have this letter, Belarusian, Serbian and Macedonian manage without it. 
 
 ---
 ### Example
