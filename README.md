@@ -9,48 +9,45 @@ Original JavaScript file at: http://steen.free.fr/scripts/cyrpol.js
 
 Ever wondered what Polish would look like if it were written in Cyrillic? Perhaps you have. Or not. In any case, I have. That's what happens when you spend half of your life working on language projects that one way or another are related to Polish or the Slavic languages in general. Toying around with Polish, Slavic, as well as with several Slavic orthographies, it is hard not to think about the possibilities of a Cyrillic orthography for Polish.
 
-Many people have argued that Cyrillic would be unsuitable for Polish. I disagree with that opinion. Granted, Polish phonology differs from that of the other Slavic languages in several ways, but these two facts remain: Polish is a completely Slavic language by any standard, and Cyrillic, unlike the Latin alphabet, was made especially to fit Cyrillic phonology, and therefore is perfectly suited for it. Therefore, I am convinced that Polish and Cyrillic are a perfect match. Much more so, in fact, than Polish and the Latin alphabet. Latin orthographies of Slavic languages always have one of the following two disadvantages: either they are full of diacritical marks, or they look horribly like English or another Western language. Slovene manages best, but still has š, ž and č. Other languages have more of those babies. Polish orthography has managed to avoid hačeks, but has a whole bunch of other diacritics instead: ą, ę, ł, ż, ć, ń, ó, ś, ź. Besides, Polish in addition tends to favour digraphs like sz and ie, so Polish words tend to be appear longer than they actually are.
+Many people have argued that Cyrillic would be unsuitable for Polish. I disagree with that opinion. Granted, Polish phonology differs from that of the other Slavic languages in several ways, but these two facts remain: Polish is a completely Slavic language by any standard, and Cyrillic, unlike the Latin alphabet, was made especially to fit Cyrillic phonology, and therefore is perfectly suited for it. Therefore, I am convinced that Polish and Cyrillic are a perfect match. Much more so, in fact, than Polish and the Latin alphabet. Latin orthographies of Slavic languages always have one of the following two disadvantages: either they are full of diacritical marks, or they look horribly like English or another Western language. Slovene manages best, but still has **š**, **ž** and **č**. Other languages have more of those babies. Polish orthography has managed to avoid hačeks, but has a whole bunch of other diacritics instead: **ą**, **ę**, **ł**, **ż**, **ć**, **ń**, **ó**, **ś**, **ź**. Besides, Polish in addition tends to favour digraphs like **sz** and **ie**, so Polish words tend to be appear longer than they actually are.
 
 Now, I am quite fond of Polish orthography, and therefore my Cyrillic orthography of Polish should by no means be treated as a serious proposal to replace Polish orthography. If anyone would ever make such a proposal, I would be the first to stand up against it. This project, therefore, is primarily a thought experiment, my answer to the question if such an orthography would be possible at all.
 
 The idea, by the way, is not new at all. If we have to believe Wikipedia, Russia's czar Nikolay I intended to cyrillify Polish in the mid-19th century as a means for russification, although at last nothing came of his plans. Here is a sample:
 
-Поврóтъ Таты, пр̌езъ А. Мицкевича
-
-Пóйдзьце о дзятки, пóйдзьце вшистке разэм  
-За място, подъ слупъ на взгóрэкъ,  
-Тамъ пр̌едъ цудовнымъ клęкнийце образэмъ,  
-Побожне змóвце пацёрэкъ.  
-
-Тато не враца ранки и вечоры  
-Вэ Лзах го чекамъ и трводзэ;  
-Розлялы р̌еки, пэлнэ звер̌а боры,  
-И пэлно збóйцóвъ на дродзэ;-  
-	
-
-
-
-Слышąцъ то дзятки бегнą вшистке разэмъ  
-За място подъ слупъ на взгóрэкъ,  
-Тамъ пр̌едъ цудовнымъ клęкая̨ образемъ,  
-И зачиная̨ пацёрэкъ.  
-
-Цалуя̨ земę, потэмъ въ Имę Ойца,  
-Сына и Духа свęтэго,  
-Бąдзь похвалёна пр̌енайсьвęтша Трóйца  
-Тэразъ и часу вшелькего.  
-
-(...)
+> **Поврóтъ Таты, пр̌езъ А. Мицкевича**
+>
+> Пóйдзьце о дзятки, пóйдзьце вшистке разэм  
+> За място, подъ слупъ на взгóрэкъ,  
+> Тамъ пр̌едъ цудовнымъ клęкнийце образэмъ,  
+> Побожне змóвце пацёрэкъ.  
+> 
+> Тато не враца ранки и вечоры  
+> Вэ Лзах го чекамъ и трводзэ;  
+> Розлялы р̌еки, пэлнэ звер̌а боры,  
+> И пэлно збóйцóвъ на дродзэ;-  
+>	
+> Слышąцъ то дзятки бегнą вшистке разэмъ  
+> За място подъ слупъ на взгóрэкъ,  
+> Тамъ пр̌едъ цудовнымъ клęкая̨ образемъ,  
+> И зачиная̨ пацёрэкъ.  
+> 
+> Цалуя̨ земę, потэмъ въ Имę Ойца,  
+> Сына и Духа свęтэго,  
+> Бąдзь похвалёна пр̌енайсьвęтша Трóйца  
+> Тэразъ и часу вшелькего.  
+> 
+> (...)
 
 A few pecularities in this text deserve our attention:
 
-* the use of the letter р̌ for Polish rz;
-* the hard sign ъ at the end of many words (a feature common in prerevolutionary Russian);
-* the fact that Polish ó remains untouched;
+* the use of the letter **р̌** for Polish **rz**;
+* the hard sign **ъ** at the end of many words (a feature common in prerevolutionary Russian);
+* the fact that Polish **ó** remains untouched;
 * this orthography inherits the Polish ogonek and adds it to Cyrillic letters;
-* the use of ць and дзь where Polish has ć and dź, a feature also present in contemporary Belarusian. 
+* the use of **ць** and **дзь** where Polish has **ć** and **dź**, a feature also present in contemporary Belarusian. 
 
-My own Cyrillic orthography for Polish is largely based on the same premises, but there are a few differences as well, which I will describe below. By the way, it should be noted that the transcription quoted above is not the only attempt at a Cyrillic alphabet for Polish. Several people have played with the idea, seriously or less seriously. An interesting example is Jusowica (Юсовица), created by Szymon Pawlas.
+My own Cyrillic orthography for Polish is largely based on the same premises, but there are a few differences as well, which I will describe below. By the way, it should be noted that the transcription quoted above is not the only attempt at a Cyrillic alphabet for Polish. Several people have played with the idea, seriously or less seriously. An interesting example is [Jusowica (Юсовица)](http://varpho.livejournal.com/2006/11/17/), created by Szymon Pawlas.
 
 ---
 The biggest problem related with the Cyrillisation of Polish are sounds that do not exist in other languages, nor do they correspond closely with anything else that exist in them: the nasal vowels ą and ę. The 19th century Russian solution is in fact a pretty funny one: it simply teleports the ogonek to Cyrillic, thus producing four characters that have never seen before in Cyrillic: а̨, э̨, я̨ and е̨ (the latter two representing ją and ję respectively). A funny solution indeed! And an unnecessary one to that, because Old Church Slavonic has precisely four Cyrillic characters for exactly these four sounds: ѫ, ѧ, ѭ and ѩ. True, they are uncommon, because the only living Slavic language that preserved these sounds is Polish, a language that happens to be written in Latin alphabet. But since these letters are around, why shouldn't we simply use them? After all, they exist, and are indefinitely more Cyrillic than Cyrillic letters with ogoneks beneath them. Besides, the choice for а̨ and я̨ is equally unlogical as the Polish letter ą itself, since it is pronounced as nasalised o; it is not for nothing that the Latin transcription of Old Church Slavonic uses ǫ.
