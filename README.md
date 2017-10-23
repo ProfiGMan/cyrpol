@@ -93,35 +93,20 @@ o 	|io/jo 	|о 	|ë
 
 Now that the question of palatalised vs. non-palalalised consonant has been resolved by the vowels that follow them, the consonants have suddenly become very simple to handle. Here goes:
 
-Latin   |Cyrylica
---------|--------
-p 	|п
-b 	|б
-f 	|ф
-w 	|в
-t, ć 	|т
-d, dź 	|д
-s, ś 	|с
-z, ź 	|з
-k 	|к
-g 	|г
-ch<br>h |х
+Latin   |Cyrylica | |Latin   |Cyrylica
+--------|---------|-|--------|--------
+p 	|п	| |sz 	|ш
+b 	|б	| |ż 	|ж
+f 	|ф	| |cz 	|ч
+w 	|в	| |szcz 	|щ
+t, ć 	|т	| |c 	|ц
+d, dź 	|д	| |m 	|м
+s, ś 	|с	| |n 	|н
+z, ź 	|з	| |ł, l 	|л
+k 	|к	| |r, rz 	|р
+g 	|г	| |j 	|й
+ch<br>h |х	| |ь<br>ъ 	|soft sign<br>hard sign
 	
-Latin   |Cyrylica
---------|--------
-sz 	|ш
-ż 	|ж
-cz 	|ч
-szcz 	|щ
-c 	|ц
-m 	|м
-n 	|н
-ł, l 	|л
-r, rz 	|р
-j 	|й
-ь 	|soft sign
-ъ 	|hard sign
-
 A few notes:
 
 * Most consonants can be soft (palatalised) or hard. Whether a Cyrillic **д** should be read as **d** or **dź** is decided by the consonant that follows it: **дэ** should be read as **de**, **де** should be read as **dzie**.
