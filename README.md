@@ -73,58 +73,57 @@ So, let's see now what Cyrylica Polska looks like.
 
 Cyrylica Polska has 37 letters. Exactly the same as the 33 letters of the Russian alphabet, with four additional characters for the nasals:
 
-А Б В Г Д Е Ë Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я Ѧ Ѫ Ѩ Ѭ
+> А Б В Г Д Е Ë Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я Ѧ Ѫ Ѩ Ѭ
 
 ---
 ### Vowels
 
 Every vowel has a hardening and a softening version. Both can occur in two possitions: either it follows a consonant, or it doesn't (in that case it is either word-initial or after another vowel). In Polish orthography, when a softening vowel follows a consonant, it is preceded by i, unless the consonant in question is inherently soft. In other positions this vowel is preceded by j. The only exceptions are i, which is softening by definition, and y, which is never softening.
 Just like i and y form a pair, in Cyrillic all vowels come in pairs, as you can see in the table below:
-
-Latin	Cyrylica
-hard 	soft 	hard 	soft
-a 	ia/ja 	а 	я
-e 	ie/je 	э 	е
-y 	i 	ы 	и
-o 	io/jo 	о 	ë
-ó
-u 	ió/jó
-iu/ju 	у 	ю
-ą 	ią/ją 	ѫ 	ѭ
-ę 	ię/ję 	ѧ 	ѩ
+  	
+Latin<br>hard |Latin<br>soft |Cyrylica<br>hard |Cyrylica<br>soft
+--------|-------|-------|-----
+a 	|ia/ja 	|а 	|я
+e 	|ie/je 	|э 	|е
+y 	|i 	|ы 	|и
+o 	|io/jo 	|о 	|ë
+ó<br>u 	|ió/jó<br>iu/ju	|у 	|ю
+ą 	|ią/ją 	|ѫ 	|ѭ
+ę 	|ię/ję 	|ѧ 	|ѩ
 
 ---
 ### Consonants
 
 Now that the question of palatalised vs. non-palalalised consonant has been resolved by the vowels that follow them, the consonants have suddenly become very simple to handle. Here goes:
 
-Latin	Cyrylica
-p 	п
-b 	б
-f 	ф
-w 	в
-t, ć 	т
-d, dź 	д
-s, ś 	с
-z, ź 	з
-k 	к
-g 	г
-ch
-h 	х
+Latin   |Cyrylica
+--------|--------
+p 	|п
+b 	|б
+f 	|ф
+w 	|в
+t, ć 	|т
+d, dź 	|д
+s, ś 	|с
+z, ź 	|з
+k 	|к
+g 	|г
+ch<br>h |х
 	
-Latin	Cyrylica
-sz 	ш
-ż 	ж
-cz 	ч
-szcz 	щ
-c 	ц
-m 	м
-n 	н
-ł, l 	л
-r, rz 	р
-j 	й
-ь 	soft sign
-ъ 	hard sign
+Latin   |Cyrylica
+--------|--------
+sz 	|ш
+ż 	|ж
+cz 	|ч
+szcz 	|щ
+c 	|ц
+m 	|м
+n 	|н
+ł, l 	|л
+r, rz 	|р
+j 	|й
+ь 	|soft sign
+ъ 	|hard sign
 
 A few notes:
 
@@ -141,54 +140,9 @@ A few notes:
 
 To give an example of Polish Cyrillic, let's use the same text as the one quoted above:
 
-Powrót Taty, przez A. Mickiewicza
-
-Pójdźcie o dziatki, pójdźcie wszystkie razem  
-Za miasto, pod słup na wzgórek,  
-Tam przed cudownym klęknijcie obrazem,  
-Pobożnie zmówcie paciorek.  
-
-Tato nie wraca ranki i wieczory  
-we łzach go czekam i trwodze;  
-Rozlały rzeki, pełne zwierza bory,  
-I pełno zbójców na drodze;-
-
-Słysząc to dziatki biegną wszystkie razem  
-Za miasto pod słup na wzgórek,  
-Tam przed cudownym klękają obrazem,  
-I zaczynają paciorek.  
-
-Całują ziemię, potem w Imię Ojca,  
-Syna i Ducha świętego,  
-Bądź pochwalona przenajświętsza Trójca  
-Teraz i czasu wszelkiego.  
-
-(...)
-	
-
-Поврут Таты, през А. Мицкевича
-
-Пуйдьте о дятки, пуйдьте вшистке разэм  
-За място, под слуп на взгурэк,  
-Там пред цудовным клѩкнийте образэм,  
-Побожне змувте патëрэк.  
-
-Тато не враца ранки и вечоры  
-вэ лзах го чекам и трводзэ;  
-Розлялы реки, пэлнэ зверя боры,  
-И пэлно збуйцув на дродзэ;-  
-
-Слышѫц то дятки бегнѫ вшистке разэм  
-За място под слуп на взгурэк,  
-Там пред цудовным клѩкаѭ образэм,  
-И зачинаѭ патëрэк.  
-
-Цалуѭ земѩ, потэм в Имѩ Ойца,  
-Сына и Духа свѩтэго,  
-Бѫдь похвалëна пренайсвѩтша Труйца  
-Тэраз и часу вшелькего.
-
-(...)
+Powrót Taty, przez A. Mickiewicza | Поврут Таты, през А. Мицкевича
+----------------------------------|-------------------------------
+Pójdźcie o dziatki, pójdźcie wszystkie razem<br>Za miasto, pod słup na wzgórek,<br>Tam przed cudownym klęknijcie obrazem,<br>Pobożnie zmówcie paciorek.<br><br>Tato nie wraca ranki i wieczory<br>we łzach go czekam i trwodze;<br>Rozlały rzeki, pełne zwierza bory,<br>I pełno zbójców na drodze;-<br><br>Słysząc to dziatki biegną wszystkie razem<br>Za miasto pod słup na wzgórek,<br>Tam przed cudownym klękają obrazem,<br>I zaczynają paciorek.<br><br>Całują ziemię, potem w Imię Ojca,<br>Syna i Ducha świętego,<br>Bądź pochwalona przenajświętsza Trójca<br>Teraz i czasu wszelkiego.<br><br>(...)  | Пуйдьте о дятки, пуйдьте вшистке разэм<br>За място, под слуп на взгурэк,<br>Там пред цудовным клѩкнийте образэм,<br>Побожне змувте патëрэк.<br><br>Тато не враца ранки и вечоры<br>вэ лзах го чекам и трводзэ;<br>Розлялы реки, пэлнэ зверя боры,<br>И пэлно збуйцув на дродзэ;-<br><br>Слышѫц то дятки бегнѫ вшистке разэм<br>За място под слуп на взгурэк,<br>Там пред цудовным клѩкаѭ образэм,<br>И зачинаѭ патëрэк.<br><br>Цалуѭ земѩ, потэм в Имѩ Ойца,<br>Сына и Духа свѩтэго,<br>Бѫдь похвалëна пренайсвѩтша Труйца<br>Тэраз и часу вшелькего.<br><br>(...)
 
 ---
 ### Transcription
