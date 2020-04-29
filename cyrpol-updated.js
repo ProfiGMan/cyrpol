@@ -127,6 +127,7 @@ function transliterateW (iW)
 
 	iW = (iW.replace(/ljlj/g,"llj"));
 	iW = (iW.replace(/sjtj/g,"stj"));
+	iW = (iW.replace(/sjcj/g,"scj")); // new
 	iW = (iW.replace(/zjdj/g,"zdj"));
 	iW = (iW.replace(/sjpj/g,"spj"));
 	iW = (iW.replace(/zjbj/g,"zbj"));
