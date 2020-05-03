@@ -93,7 +93,8 @@ function transliterateW (iW)
 	iW = (iW.replace(/ió/g,"ю́V")); // new
 	iW = (iW.replace(/ó/g,"о́V"));  // new
 	//iW = (iW.replace(/ó/g,"u"));
-	iW = (iW.replace(/ch/g,"h"));
+	//iW = (iW.replace(/ch/g,"h"));
+	iW = (iW.replace(/ch/g,"х")); // new
 	iW = (iW.replace(/j/g,"jj"));
 	iW = (iW.replace(/rz/g,"р̌j"));  // new
 	//iW = (iW.replace(/rz/g,"rj"));
@@ -184,7 +185,8 @@ function transliterateW (iW)
 	iW = (iW.replace(/z/g,"з"));
 	iW = (iW.replace(/k/g,"к"));
 	iW = (iW.replace(/g/g,"г"));
-	iW = (iW.replace(/h/g,"х"));
+	//iW = (iW.replace(/h/g,"х"));
+	iW = (iW.replace(/h/g,"х̾")); // new
 	iW = (iW.replace(/m/g,"м"));
 	iW = (iW.replace(/n/g,"н"));
 	iW = (iW.replace(/l/g,"л"));
