@@ -196,8 +196,11 @@ function transliterateW (iW)
 	iW = (iW.replace(/š/g,"ш"));
 	iW = (iW.replace(/ž/g,"ж"));
 	iW = (iW.replace(/c/g,"ц"));
-	iW = (iW.replace(/цъ/g,"ц"));
-	iW = (iW.replace(/цьъ/g,"ц"));
+	//iW = (iW.replace(/цъ/g,"ц"));	
+	//iW = (iW.replace(/цьъ/g,"ц"));
+	iW = (iW.replace(/цьъ/g,"цъ")); // new
+	iW = (iW.replace(/сьъ/g,"съ")); // new
+	iW = (iW.replace(/зьъ/g,"зъ")); // new
 
 	if (type == "mod")
 	{
