@@ -51,9 +51,6 @@ function lus (iSource)
 
 function transliterateW (iW)
 {
-	if (document.ogonek.ogonek[0].checked == true) 		{ type = "old"; }
-	else if (document.ogonek.ogonek[1].checked == true)	{ type = "mod"; }
-
 	iW = (iW.replace(/%/g,"PRRO"));
 	iW = "%" + iW;
 	iW = (iW.replace(/-/g,"-%"));
@@ -89,28 +86,44 @@ function transliterateW (iW)
 
 	OrigW = iW;
 	iW = iW.toLowerCase();
+	
+	// oddzielne słowa
+	iW = (iW.replace(/sinus/g,"сінус")); // my new
+	
+	iW = (iW.replace(/ti/g,"ті")); // my new
+	iW = (iW.replace(/di/g,"ді")); // my new
+	iW = (iW.replace(/ri/g,"рі")); // my new
+	iW = (iW.replace(/czi/g,"чі")); // my new
+	iW = (iW.replace(/dżi/g,"джі")); // my new
+	iW = (iW.replace(/żi/g,"жі")); // my new
+	iW = (iW.replace(/szi/g,"ші")); // my new
+	iW = (iW.replace(/szczi/g,"щі")); // my new
+	iW = (iW.replace(/kio/g,"кіо")); // my new
+	iW = (iW.replace(/kia/g,"кіа")); // my new
+	iW = (iW.replace(/kiu/g,"кіу")); // my new
+	iW = (iW.replace(/gio/g,"гіо")); // my new
+	iW = (iW.replace(/gia/g,"гіа")); // my new
+	iW = (iW.replace(/giu/g,"гіу")); // my new
 
-	iW = (iW.replace(/ió/g,"ю́V")); // new
-	iW = (iW.replace(/ó/g,"о́V"));  // new
 	//iW = (iW.replace(/ó/g,"u"));
 	//iW = (iW.replace(/ch/g,"h"));
 	iW = (iW.replace(/ch/g,"х")); // new
 	iW = (iW.replace(/j/g,"jj"));
-	iW = (iW.replace(/rz/g,"р̌j"));  // new
-	//iW = (iW.replace(/rz/g,"rj"));
+	//iW = (iW.replace(/rz/g,"р̌j"));  // new
+	iW = (iW.replace(/rz/g,"rj"));
 	iW = (iW.replace(/cz/g,"čJ"));
 	iW = (iW.replace(/sz/g,"šJ"));
 	iW = (iW.replace(/ż/g,"žJ"));
-
-	//iW = (iW.replace(/ci/g,"ti"));
-	//iW = (iW.replace(/dzi/g,"di"));
+	
+	iW = (iW.replace(/ci/g,"ti"));
+	iW = (iW.replace(/dzi/g,"di"));
 	iW = (iW.replace(/l/g,"lj"));
 	iW = (iW.replace(/lji/g,"li"));
 	iW = (iW.replace(/ł/g,"l"));
-	iW = (iW.replace(/ć/g,"cj"));   //new
-	//iW = (iW.replace(/ć/g,"tj"));
-	iW = (iW.replace(/dź/g,"dzj")); //new
-	//iW = (iW.replace(/dź/g,"dj"));
+	//iW = (iW.replace(/ć/g,"cj"));   //new
+	iW = (iW.replace(/ć/g,"tj"));
+	//iW = (iW.replace(/dź/g,"dzj")); //new
+	iW = (iW.replace(/dź/g,"dj"));
 	iW = (iW.replace(/ś/g,"sj"));
 	iW = (iW.replace(/ź/g,"zj"));
 	iW = (iW.replace(/ń/g,"nj"));
@@ -124,11 +137,22 @@ function transliterateW (iW)
 	iW = (iW.replace(/iu/g,"ju"));
 	iW = (iW.replace(/ią/g,"ją"));
 	iW = (iW.replace(/ię/g,"ję"));
+	iW = (iW.replace(/ió/g,"jó")); // new
+	
+	// nauki które muszą mieć "і" zamiast "и"
+	iW = (iW.replace(/ljogj/g,"лёгі")); // my new
+	iW = (iW.replace(/ljogii/g,"лёгіи")); // my new
+	iW = (iW.replace(/nomj/g,"номі")); // my new
+	iW = (iW.replace(/nomii/g,"номіи")); // my new
+	iW = (iW.replace(/fj/g,"фі")); // my new
+	iW = (iW.replace(/fii/g,"фіи")); // my new
+	// logia+ (gia) fia+ nomia+ bio chemia grafia+ lurgia tomia
+	
 	iW = (iW.replace(/i/g,"ji"));
 
 	iW = (iW.replace(/ljlj/g,"llj"));
 	iW = (iW.replace(/sjtj/g,"stj"));
-	iW = (iW.replace(/sjcj/g,"scj")); // new
+	//iW = (iW.replace(/sjcj/g,"scj")); // new
 	iW = (iW.replace(/zjdj/g,"zdj"));
 	iW = (iW.replace(/sjpj/g,"spj"));
 	iW = (iW.replace(/zjbj/g,"zbj"));
@@ -156,6 +180,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/je/g,"JеV"));
 	iW = (iW.replace(/i/g,"JиV"));
 	iW = (iW.replace(/jo/g,"JёV"));
+	iW = (iW.replace(/jó/g,"JêV")); // new
 	iW = (iW.replace(/ju/g,"JюV"));
 	iW = (iW.replace(/ją/g,"JѭV"));
 	iW = (iW.replace(/ję/g,"JѩV"));
@@ -163,6 +188,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/e/g,"эV"));
 	iW = (iW.replace(/y/g,"ыV"));
 	iW = (iW.replace(/o/g,"оV"));
+	iW = (iW.replace(/ó/g,"ôV"));  // new
 	iW = (iW.replace(/u/g,"уV"));
 	iW = (iW.replace(/ą/g,"ѫV"));
 	iW = (iW.replace(/ę/g,"ѧV"));
@@ -186,7 +212,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/k/g,"к"));
 	iW = (iW.replace(/g/g,"г"));
 	//iW = (iW.replace(/h/g,"х"));
-	iW = (iW.replace(/h/g,"х̾")); // new
+	iW = (iW.replace(/h/g,"ґ")); // new
 	iW = (iW.replace(/m/g,"м"));
 	iW = (iW.replace(/n/g,"н"));
 	iW = (iW.replace(/l/g,"л"));
@@ -201,8 +227,18 @@ function transliterateW (iW)
 	iW = (iW.replace(/цьъ/g,"цъ")); // new
 	iW = (iW.replace(/сьъ/g,"съ")); // new
 	iW = (iW.replace(/зьъ/g,"зъ")); // new
+	
+	iW = (iW.replace(/ьъ/g,"й")); // fixes jidysz -> ьъидыш to йидыш
+	
+	if (document.h_spelling.h_spelling[1].checked == true)	{ iW = (iW.replace(/ґ/g,"х")); }
+	
+	if (document.long_o.long_o[1].checked == true)	
+	{
+		iW = (iW.replace(/ô/g,"у"));
+		iW = (iW.replace(/ê/g,"ю"));
+	}
 
-	if (type == "mod")
+	if (document.ogonek.ogonek[1].checked == true)
 	{
 	iW = (iW.replace(/ѭ/g,"я̨"));
 	iW = (iW.replace(/ѩ/g,"е̨"));
