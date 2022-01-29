@@ -51,6 +51,24 @@ function lus (iSource)
 
 function transliterateW (iW)
 {
+	if (document.h_spelling.h_spelling[0].checked == true) h_spelling = true;
+	else if (document.h_spelling.h_spelling[1].checked == true) h_spelling = false;
+	
+	if (document.long_o.long_o[0].checked == true) long_o = true;
+	else if (document.long_o.long_o[1].checked == true) long_o = false;
+
+	if (document.ogonek.ogonek[0].checked == true) old_nasal_vowels = true;
+	else if (document.ogonek.ogonek[1].checked == true) old_nasal_vowels = false;
+	
+	if (document.soft_td_spelling.soft_td_spelling[0].checked == true) soft_td_spelling = "tjdj";
+	else if (document.soft_td_spelling.soft_td_spelling[1].checked == true) soft_td_spelling = "cjdzj";
+	
+	if (document.soft_r_spelling.soft_r_spelling[0].checked == true) soft_r_spelling = "rj";
+	else if (document.soft_r_spelling.soft_r_spelling[1].checked == true) soft_r_spelling = "rhacek";
+	
+	if (document.soft_clusters_spelling.soft_clusters_spelling.checked == true) soft_clusters_spelling = "asAWhole";
+	else soft_clusters_spelling = "individually";
+	
 	iW = (iW.replace(/%/g,"PRRO"));
 	iW = "%" + iW;
 	iW = (iW.replace(/-/g,"-%"));
@@ -88,42 +106,52 @@ function transliterateW (iW)
 	iW = iW.toLowerCase();
 	
 	// oddzielne słowa
-	iW = (iW.replace(/sinus/g,"сінус")); // my new
+	iW = (iW.replace(/sinus/g,"сінус")); 
 	
-	iW = (iW.replace(/ti/g,"ті")); // my new
-	iW = (iW.replace(/di/g,"ді")); // my new
-	iW = (iW.replace(/ri/g,"рі")); // my new
-	iW = (iW.replace(/czi/g,"чі")); // my new
-	iW = (iW.replace(/dżi/g,"джі")); // my new
-	iW = (iW.replace(/żi/g,"жі")); // my new
-	iW = (iW.replace(/szi/g,"ші")); // my new
-	iW = (iW.replace(/szczi/g,"щі")); // my new
-	iW = (iW.replace(/kio/g,"кіо")); // my new
-	iW = (iW.replace(/kia/g,"кіа")); // my new
-	iW = (iW.replace(/kiu/g,"кіу")); // my new
-	iW = (iW.replace(/gio/g,"гіо")); // my new
-	iW = (iW.replace(/gia/g,"гіа")); // my new
-	iW = (iW.replace(/giu/g,"гіу")); // my new
+	// "i" that doesn't soften the consonant and is used in loanwords 
+	iW = (iW.replace(/ti/g,"ті"));
+	iW = (iW.replace(/di/g,"ді")); 
+	iW = (iW.replace(/ri/g,"рі")); 
+	iW = (iW.replace(/łi/g,"лі"));
+	iW = (iW.replace(/czi/g,"чі")); 
+	iW = (iW.replace(/dżi/g,"джі"));
+	iW = (iW.replace(/żi/g,"жі")); 
+	iW = (iW.replace(/szi/g,"ші")); 
+	iW = (iW.replace(/szczi/g,"щі")); 
+	iW = (iW.replace(/kio/g,"kіо")); 
+	iW = (iW.replace(/kia/g,"kіа")); 
+	iW = (iW.replace(/kiu/g,"kіу")); 
+	iW = (iW.replace(/gio/g,"gіо")); 
+	iW = (iW.replace(/gia/g,"gіа")); 
+	iW = (iW.replace(/giu/g,"gіу"));
+	iW = (iW.replace(/gii/g,"gіи"));	
 
-	//iW = (iW.replace(/ó/g,"u"));
-	//iW = (iW.replace(/ch/g,"h"));
-	iW = (iW.replace(/ch/g,"х")); // new
+	iW = (iW.replace(/ch/g,"х"));
 	iW = (iW.replace(/j/g,"jj"));
-	//iW = (iW.replace(/rz/g,"р̌j"));  // new
-	iW = (iW.replace(/rz/g,"rj"));
+	
+	if (soft_r_spelling == "rj") iW = (iW.replace(/rz/g,"rj"));
+	else if (soft_r_spelling == "rhacek") iW = (iW.replace(/rz/g,"р̌J")); 
+	
 	iW = (iW.replace(/cz/g,"čJ"));
 	iW = (iW.replace(/sz/g,"šJ"));
 	iW = (iW.replace(/ż/g,"žJ"));
 	
-	iW = (iW.replace(/ci/g,"ti"));
-	iW = (iW.replace(/dzi/g,"di"));
+	if (soft_td_spelling == "tjdj")
+	{
+		iW = (iW.replace(/ci/g,"ti"));
+		iW = (iW.replace(/dzi/g,"di"));
+		iW = (iW.replace(/ć/g,"tj"));
+		iW = (iW.replace(/dź/g,"dj"));
+	}
+	else if (soft_td_spelling == "cjdzj")
+	{
+		iW = (iW.replace(/ć/g,"cj"));   
+		iW = (iW.replace(/dź/g,"dzj")); 
+	}
+	
 	iW = (iW.replace(/l/g,"lj"));
 	iW = (iW.replace(/lji/g,"li"));
 	iW = (iW.replace(/ł/g,"l"));
-	//iW = (iW.replace(/ć/g,"cj"));   //new
-	iW = (iW.replace(/ć/g,"tj"));
-	//iW = (iW.replace(/dź/g,"dzj")); //new
-	iW = (iW.replace(/dź/g,"dj"));
 	iW = (iW.replace(/ś/g,"sj"));
 	iW = (iW.replace(/ź/g,"zj"));
 	iW = (iW.replace(/ń/g,"nj"));
@@ -137,37 +165,45 @@ function transliterateW (iW)
 	iW = (iW.replace(/iu/g,"ju"));
 	iW = (iW.replace(/ią/g,"ją"));
 	iW = (iW.replace(/ię/g,"ję"));
-	iW = (iW.replace(/ió/g,"jó")); // new
+	iW = (iW.replace(/ió/g,"jó")); 
 	
 	// nauki które muszą mieć "і" zamiast "и"
-	iW = (iW.replace(/ljogj/g,"лёгі")); // my new
-	iW = (iW.replace(/ljogii/g,"лёгіи")); // my new
-	iW = (iW.replace(/nomj/g,"номі")); // my new
-	iW = (iW.replace(/nomii/g,"номіи")); // my new
-	iW = (iW.replace(/fj/g,"фі")); // my new
-	iW = (iW.replace(/fii/g,"фіи")); // my new
+	iW = (iW.replace(/bjoljog/g,"біоljog"));
+	iW = (iW.replace(/ljogj/g,"лёгі")); 
+	iW = (iW.replace(/ljogii/g,"лёгіи")); 
+	iW = (iW.replace(/nomj/g,"номі")); 
+	iW = (iW.replace(/nomii/g,"номіи")); 
+	iW = (iW.replace(/tomj/g,"томі")); 
+	iW = (iW.replace(/tomii/g,"томіи")); 
+	iW = (iW.replace(/fj/g,"фі")); 
+	iW = (iW.replace(/fii/g,"фіи")); 
 	// logia+ (gia) fia+ nomia+ bio chemia grafia+ lurgia tomia
 	
 	iW = (iW.replace(/i/g,"ji"));
 
-	iW = (iW.replace(/ljlj/g,"llj"));
-	iW = (iW.replace(/sjtj/g,"stj"));
-	//iW = (iW.replace(/sjcj/g,"scj")); // new
-	iW = (iW.replace(/zjdj/g,"zdj"));
-	iW = (iW.replace(/sjpj/g,"spj"));
-	iW = (iW.replace(/zjbj/g,"zbj"));
-	iW = (iW.replace(/sjnj/g,"snj"));
-	iW = (iW.replace(/zjnj/g,"znj"));
-	iW = (iW.replace(/sjmj/g,"smj"));
-	iW = (iW.replace(/zjmj/g,"zmj"));
-	iW = (iW.replace(/tjvj/g,"tvj"));
-	iW = (iW.replace(/djvj/g,"dvj"));
-	iW = (iW.replace(/sjvj/g,"svj"));
-	iW = (iW.replace(/zjvj/g,"zvj"));
-	iW = (iW.replace(/sjlj/g,"slj"));
-	iW = (iW.replace(/zjlj/g,"zlj"));
-	iW = (iW.replace(/sjr/g,"srj"));
-	iW = (iW.replace(/zjr/g,"zrj"));
+	iW = (iW.replace(/ljlj/g,"llj")); // millenium
+	
+	if (soft_clusters_spelling == "asAWhole") 
+	{
+		iW = (iW.replace(/sjtj/g,"stj")); // iść
+		iW = (iW.replace(/zjdj/g,"zdj")); // jeździć
+		iW = (iW.replace(/sjcj/g,"scj")); // iść (if tj = cj)
+		iW = (iW.replace(/sjdzj/g,"sdzj")); // jeździć (if dj = dzj)
+		iW = (iW.replace(/sjpj/g,"spj")); // śpiewać, śpieszyć and wspierać, wspiąć się would be spellt the same
+		iW = (iW.replace(/zjbj/g,"zbj")); // rzeźbić and zbierać would be spellt the same
+		iW = (iW.replace(/sjnj/g,"snj")); // śnić, głośnik
+		iW = (iW.replace(/zjnj/g,"znj")); // użyźnić
+		iW = (iW.replace(/sjmj/g,"smj")); // śmierć and kosmiczny would be spellt the same
+		iW = (iW.replace(/zjmj/g,"zmj")); // no words with "źmi-" but rozmiar, zmiąć
+		//iW = (iW.replace(/tjvj/g,"tvj")); // twierdzić and ćwiczyć would be spellt the same
+		//iW = (iW.replace(/djvj/g,"dvj")); // dwie and dźwięk would be spellt the same
+		iW = (iW.replace(/sjvj/g,"svj")); // świt, świat
+		iW = (iW.replace(/zjvj/g,"zvj")); // wieźć, orzeźwić and zwierzę, rozwijać would be spellt the same
+		iW = (iW.replace(/sjlj/g,"slj")); // jeśli, myśliciel ale gusli
+		iW = (iW.replace(/zjlj/g,"zlj")); // źle ale zlew
+		iW = (iW.replace(/sjr/g,"srj"));
+		iW = (iW.replace(/zjr/g,"zrj"));
+	}
 
 	iW = (iW.replace(/ji/g,"i"));
 	iW = (iW.replace(/jy/g,"i"));
@@ -211,8 +247,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/z/g,"з"));
 	iW = (iW.replace(/k/g,"к"));
 	iW = (iW.replace(/g/g,"г"));
-	//iW = (iW.replace(/h/g,"х"));
-	iW = (iW.replace(/h/g,"ґ")); // new
+	iW = (iW.replace(/h/g,"ґ"));
 	iW = (iW.replace(/m/g,"м"));
 	iW = (iW.replace(/n/g,"н"));
 	iW = (iW.replace(/l/g,"л"));
@@ -222,23 +257,22 @@ function transliterateW (iW)
 	iW = (iW.replace(/š/g,"ш"));
 	iW = (iW.replace(/ž/g,"ж"));
 	iW = (iW.replace(/c/g,"ц"));
-	//iW = (iW.replace(/цъ/g,"ц"));	
-	//iW = (iW.replace(/цьъ/g,"ц"));
-	iW = (iW.replace(/цьъ/g,"цъ")); // new
-	iW = (iW.replace(/сьъ/g,"съ")); // new
-	iW = (iW.replace(/зьъ/g,"зъ")); // new
+	iW = (iW.replace(/цьъ/g,"цъ")); 
+	iW = (iW.replace(/сьъ/g,"съ")); 
+	iW = (iW.replace(/зьъ/g,"зъ")); 
 	
-	iW = (iW.replace(/ьъ/g,"й")); // fixes jidysz -> ьъидыш to йидыш
+	iW = (iW.replace(/ьъ/g,"й")); // fixes jidysz - ьъидыш to йидыш
+	iW = (iW.replace(/ьь/g,"й"));
 	
-	if (document.h_spelling.h_spelling[1].checked == true)	{ iW = (iW.replace(/ґ/g,"х")); }
+	if (h_spelling == false) iW = (iW.replace(/ґ/g,"х"));
 	
-	if (document.long_o.long_o[1].checked == true)	
+	if (long_o == false)	
 	{
 		iW = (iW.replace(/ô/g,"у"));
 		iW = (iW.replace(/ê/g,"ю"));
 	}
 
-	if (document.ogonek.ogonek[1].checked == true)
+	if (old_nasal_vowels == false)
 	{
 	iW = (iW.replace(/ѭ/g,"я̨"));
 	iW = (iW.replace(/ѩ/g,"е̨"));

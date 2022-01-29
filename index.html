@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<p>This is a modificated version of <a href="https://dimitrius-brest.github.io/cyrpol/">this transliterator</a></p>
+<p>This is a modified version of <a href="https://dimitrius-brest.github.io/cyrpol/">this transliterator</a></p>
 <center>
 <table width="100%" cellspacing="10" cellpadding="0" border="0">
 <tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="ogonek">
@@ -17,21 +17,37 @@
 	<input name="ogonek" id="ogonek" type="radio" onclick="trans ()"> а̨/э̨/я̨/е̨
 </form></th></tr>
 <tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="long_o">
+	ó =
 	<input name="long_o" id="long_o" type="radio" onclick="trans ()" checked> ô/ê
 	<input name="long_o" id="long_o" type="radio" onclick="trans ()"> у/ю
 </form></th></tr>
 <tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="h_spelling">
-	<input name="h_spelling" id="h_spelling" type="radio" onclick="trans ()" checked> ґ
-	<input name="h_spelling" id="h_spelling" type="radio" onclick="trans ()"> х
+	h =
+	<input name="h_spelling" id="h_spelling" type="radio" onclick="trans ()"> ґ
+	<input name="h_spelling" id="h_spelling" type="radio" onclick="trans ()" checked> х
+</form></th></tr>
+<tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="soft_td_spelling">
+	ć/dź =
+	<input name="soft_td_spelling" id="soft_td_spelling" type="radio" onclick="trans ()" checked> ть/дь
+	<input name="soft_td_spelling" id="soft_td_spelling" type="radio" onclick="trans ()"> ць/дзь
+</form></th></tr>
+<tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="soft_r_spelling">
+	rz =
+	<input name="soft_r_spelling" id="soft_r_spelling" type="radio" onclick="trans ()" checked> рь
+	<input name="soft_r_spelling" id="soft_r_spelling" type="radio" onclick="trans ()"> р̌
+</form></th></tr>
+<tr><th colspan="2" style="font-weight:bold; text-align:center;"><form action="" name="soft_clusters_spelling">
+	<input name="soft_clusters_spelling" id="soft_clusters_spelling" type="checkbox" onclick="trans ()" checked>
+	<label for="soft_clusters_spelling">Consonant clusters are palatalyzed as a whole (исть instead of исьть)</label>
 </form></th></tr>
 <tr style="font-weight:bold; text-align:center;">
-<td>Wpisz tutaj swój tekst źródłowy:<br>Впиш тутай свуй тэкст зрюдловы:<br>Insert your source text here:</td>
-<td>Result:<br>Rezultat:<br>Рэзультат:</td></tr>
+<td>Wpisz tutaj tekst na łacince:<br>Впиш тутай тэкст на латинце:<br>Insert your text in Latin script here:</td>
+<td>Rezultat:<br>Рэзультат:<br>Result:</td></tr>
 
 <tr valign="middle" height="385px">
 <td width="48%">
 		<table width="100%" height="100%" cellspacing="5" cellpadding="0" border="0">
-			<tr height="100px"><td><textarea name="SourceText" onchange="trans ()"></textarea></td></tr>
+			<tr height="100px"><td><textarea name="SourceText" oninput="trans ()"></textarea></td></tr>
 		</table>
 </td><td width="48%">
 		<table width="100%" height="100%" cellspacing="5" cellpadding="0" border="0">
