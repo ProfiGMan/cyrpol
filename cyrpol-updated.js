@@ -177,7 +177,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/tomii/g,"томіи")); 
 	iW = (iW.replace(/fj/g,"фі")); 
 	iW = (iW.replace(/fii/g,"фіи")); 
-	// logia+ (gia) fia+ nomia+ bio chemia grafia+ lurgia tomia
+	// logia+ (gia) fia+ nomia+ bio chemia grafia+ lurgia+ tomia+
 	
 	iW = (iW.replace(/i/g,"ji"));
 
@@ -216,7 +216,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/je/g,"JеV"));
 	iW = (iW.replace(/i/g,"JиV"));
 	iW = (iW.replace(/jo/g,"JёV"));
-	iW = (iW.replace(/jó/g,"JêV")); // new
+	iW = (iW.replace(/jó/g,"JêV"));
 	iW = (iW.replace(/ju/g,"JюV"));
 	iW = (iW.replace(/ją/g,"JѭV"));
 	iW = (iW.replace(/ję/g,"JѩV"));
@@ -224,7 +224,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/e/g,"эV"));
 	iW = (iW.replace(/y/g,"ыV"));
 	iW = (iW.replace(/o/g,"оV"));
-	iW = (iW.replace(/ó/g,"ôV"));  // new
+	iW = (iW.replace(/ó/g,"ôV")); 
 	iW = (iW.replace(/u/g,"уV"));
 	iW = (iW.replace(/ą/g,"ѫV"));
 	iW = (iW.replace(/ę/g,"ѧV"));
