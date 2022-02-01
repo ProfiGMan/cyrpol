@@ -257,6 +257,7 @@ function transliterateW (iW)
 	iW = (iW.replace(/š/g,"ш"));
 	iW = (iW.replace(/ž/g,"ж"));
 	iW = (iW.replace(/c/g,"ц"));
+	iW = (iW.replace(/цэ/g,"це"));
 	iW = (iW.replace(/цьъ/g,"цъ")); 
 	iW = (iW.replace(/сьъ/g,"съ")); 
 	iW = (iW.replace(/зьъ/g,"зъ")); 
